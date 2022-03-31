@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RmR-KH-afq">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want some fun but completley useless facts?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-17-JQb">
+                                <rect key="frame" x="14" y="210" width="400" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y6-hP-b6T">
+                                <rect key="frame" x="30" y="652" width="368" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="i0W-NX-xAv"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="rbx-Ig-uo6"/>
+                                </constraints>
+                                <color key="tintColor" cyan="0.0" magenta="0.0" yellow="0.1306579709" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Yes, give me a random fact">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="randomFactButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TiT-kj-bhm"/>
+                                    <segue destination="yg8-7d-C7E" kind="presentation" id="YAT-qd-4vq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dv6-17-JQb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="04i-uC-KEO"/>
+                            <constraint firstItem="RmR-KH-afq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4cI-MH-K7p"/>
+                            <constraint firstItem="RmR-KH-afq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XhW-P6-fWu"/>
+                            <constraint firstItem="dv6-17-JQb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="166" id="axC-sY-Grj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Y6-hP-b6T" secondAttribute="trailing" constant="30" id="ddB-oe-qcw"/>
+                            <constraint firstItem="RmR-KH-afq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gzI-6z-ojm"/>
+                            <constraint firstItem="RmR-KH-afq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kwY-bn-h7B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Y6-hP-b6T" secondAttribute="bottom" constant="205" id="ogK-34-5cD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dv6-17-JQb" secondAttribute="trailing" constant="14" id="pPn-12-7uP"/>
+                            <constraint firstItem="8Y6-hP-b6T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="z7a-te-pFu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="67.016491754122939"/>
+        </scene>
+        <!--Fun Fact View Controller-->
+        <scene sceneID="nK3-HE-Wgp">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="yg8-7d-C7E" customClass="FunFactViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ANV-E1-NUK">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="aVg-6V-biy">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI5-aZ-8TW">
+                                <rect key="frame" x="16" y="144" width="396" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="vf2-dt-6si"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9h-Sx-pSw">
+                                <rect key="frame" x="116" y="651" width="196" height="35"/>
+                                <color key="tintColor" cyan="0.0" magenta="0.0" yellow="0.1306579709" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Ok, it was fun">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="okButtonSelected:" destination="yg8-7d-C7E" eventType="touchUpInside" id="qOW-kr-uVz"/>
+                                    <segue destination="R20-aa-6SS" kind="unwind" unwindAction="unwindFor:" id="qhS-u2-eAL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfW-8x-LqG">
+                                <rect key="frame" x="116" y="589" width="196" height="35"/>
+                                <color key="tintColor" cyan="0.0" magenta="0.0" yellow="0.1306579709" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="GIve me more">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="moreFactsButtonSelected:" destination="yg8-7d-C7E" eventType="touchUpInside" id="7Rs-Q8-hPb"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wqI-sU-fPx">
+                                <rect key="frame" x="177" y="283" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8EP-K6-veN"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lI5-aZ-8TW" firstAttribute="leading" secondItem="8EP-K6-veN" secondAttribute="leading" constant="16" id="3Sc-Zc-4Cl"/>
+                            <constraint firstItem="aVg-6V-biy" firstAttribute="trailing" secondItem="8EP-K6-veN" secondAttribute="trailing" id="5ib-aQ-mSh"/>
+                            <constraint firstItem="8EP-K6-veN" firstAttribute="trailing" secondItem="jfW-8x-LqG" secondAttribute="trailing" constant="116" id="KiP-hU-p2T"/>
+                            <constraint firstItem="8EP-K6-veN" firstAttribute="trailing" secondItem="b9h-Sx-pSw" secondAttribute="trailing" constant="116" id="Mvn-Om-Mec"/>
+                            <constraint firstItem="jfW-8x-LqG" firstAttribute="leading" secondItem="8EP-K6-veN" secondAttribute="leading" constant="116" id="Q2k-fS-bdV"/>
+                            <constraint firstItem="8EP-K6-veN" firstAttribute="trailing" secondItem="lI5-aZ-8TW" secondAttribute="trailing" constant="16" id="Vwq-fv-n1d"/>
+                            <constraint firstItem="b9h-Sx-pSw" firstAttribute="leading" secondItem="8EP-K6-veN" secondAttribute="leading" constant="116" id="hN0-9E-mGw"/>
+                            <constraint firstItem="b9h-Sx-pSw" firstAttribute="top" secondItem="jfW-8x-LqG" secondAttribute="bottom" constant="27" id="if8-97-cRq"/>
+                            <constraint firstItem="lI5-aZ-8TW" firstAttribute="top" secondItem="8EP-K6-veN" secondAttribute="top" constant="100" id="ifs-Va-y2w"/>
+                            <constraint firstItem="aVg-6V-biy" firstAttribute="top" secondItem="8EP-K6-veN" secondAttribute="top" id="pot-kt-PCi"/>
+                            <constraint firstItem="aVg-6V-biy" firstAttribute="bottom" secondItem="8EP-K6-veN" secondAttribute="bottom" id="rdD-Qz-lsw"/>
+                            <constraint firstItem="8EP-K6-veN" firstAttribute="bottom" secondItem="b9h-Sx-pSw" secondAttribute="bottom" constant="206" id="w6z-PF-R5A"/>
+                            <constraint firstItem="aVg-6V-biy" firstAttribute="leading" secondItem="8EP-K6-veN" secondAttribute="leading" id="yUt-QB-HVA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="wqI-sU-fPx" id="XZL-50-Ihg"/>
+                        <outlet property="funFactLabel" destination="lI5-aZ-8TW" id="bak-gP-s5v"/>
+                        <outlet property="moreButton" destination="jfW-8x-LqG" id="kE4-BA-8PD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcN-UX-t7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="R20-aa-6SS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="693.60000000000002" y="66.11694152923539"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1400" height="2101"/>
+    </resources>
+</document>
