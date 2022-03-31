@@ -43,8 +43,7 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="randomFactButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TiT-kj-bhm"/>
-                                    <segue destination="yg8-7d-C7E" kind="presentation" id="YAT-qd-4vq"/>
+                                    <segue destination="yg8-7d-C7E" kind="presentation" id="qiC-8b-Tuu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,7 +149,6 @@
                     <connections>
                         <outlet property="activityIndicator" destination="wqI-sU-fPx" id="XZL-50-Ihg"/>
                         <outlet property="funFactLabel" destination="lI5-aZ-8TW" id="bak-gP-s5v"/>
-                        <outlet property="moreButton" destination="jfW-8x-LqG" id="kE4-BA-8PD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcN-UX-t7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

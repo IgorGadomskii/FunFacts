@@ -5,7 +5,6 @@ import UIKit
 class FunFactViewController: UIViewController {
 
     @IBOutlet weak var funFactLabel: UILabel!
-    @IBOutlet weak var moreButton: UIButton!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     
@@ -24,7 +23,6 @@ class FunFactViewController: UIViewController {
     @IBAction func okButtonSelected(_ sender: Any) {
     }
     
-
     
     private func fetchText() {
         guard
